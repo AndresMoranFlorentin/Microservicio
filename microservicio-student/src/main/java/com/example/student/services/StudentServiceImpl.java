@@ -25,7 +25,7 @@ public class StudentServiceImpl implements IStudentService{
 
     @Override
     public void save(Student student) {
-
+         studentRepository.save(student);
     }
     @Override
     public List<Student> findByIdCourse(Long idCourse) {
